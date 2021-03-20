@@ -1,25 +1,31 @@
-import logo from './logo.svg';
 import './App.css';
+import NavBar from './navbar/navbar.component';
+import {Link,BrowserRouter as Router,Switch,Route} from 'react-router-dom';
+import Home from './home/home.component'
+import Footer from './footer/footer.component';
+import CloseUp from './closeup/closeup.component'
+import Reader from './reader/reader.component'
+import React from 'react';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends React.Component {
+  render(){
+    return (
+      <Router>
+      <div className className='container-background'>
+        <div className="navbar" >
+          <NavBar />
+        </div>
+          <Switch>
+            <Route path='/' exact component={Home} />
+            <Route path='/filmlysis' component={Home} />
+            <Route path='/closeup'  component={CloseUp} />
+            <Route path='/aroyalewithcheese'  component={Reader} />
+          </Switch>
+      </div>
+      <Footer />
+      </Router>
+    );
+  } 
 }
 
 export default App;

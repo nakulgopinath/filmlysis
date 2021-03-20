@@ -1,0 +1,108 @@
+.navbar {
+  width: 100%;
+  height: 200px;
+}
+.navbar-image {
+  width: 100%;
+  height: 200px;
+  background-size: cover;
+  background-repeat: repeat-x;
+  background: url('../images/cover.png');
+}
+.navbar-menu {
+  padding-top: 190px;
+  display: block;
+  border-bottom: 10px solid;
+}
+
+.navbar li {
+    float: left;
+}
+/* .navbar li a:nth-child(1) {
+  float: right;
+} */
+.navbar li a {
+display: block;
+color: #000000;
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
+font-family: 'Oswald', sans-serif;
+}
+.navbar li a:hover {
+  background-color:black;
+  color: #fdd007;
+}
+#menu-links{
+  display: none;
+}
+.navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+  font-weight: bold;
+  overflow: hidden;
+  background-color: #fdd007;
+  display: flex;
+  justify-content: center;
+} 
+@media only screen and (max-width: 600px) {
+  .navbar ul  {
+    font-size: 10px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  #menu-links {
+    display: block !important;
+    background-color: #fdd007;
+  }
+  #menu-links #mobile-view-menu {
+    position: relative;
+    display: block;
+    height: 30px;
+    background-color:#fdd007;
+    color: #000000 !important;
+  }
+  .menu-items-hidden {
+    display: none;
+  }
+  .menu-items-display {
+    display: block;
+    z-index: 999999;
+  }
+  #home-logo {
+    display: none;
+  }
+  .navbar  ul {
+    z-index: 99999;
+    position: relative;
+  }
+  .navbar-menu {
+    z-index: 99999;
+    position: relative;
+  }
+  .fa{
+    position: relative;
+    right: -12px;
+    top: 4px;
+  }
+  .blog-name{
+    position: relative;
+    right:126px;
+    top: 2px;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-family: 'Oswald', sans-serif;
+  }
+  .navbar li {
+    float: unset;
+}
+  .navbar li a:hover {
+    background-color:black;
+    color: #fdd007;
+}
+}

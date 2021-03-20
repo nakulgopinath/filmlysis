@@ -1,0 +1,16 @@
+.carousel-root  {
+    width: 68% !important;
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 60%);
+    margin-top: 10px;
+}
+.corousel-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+    .carousel-root {
+        width: 90% !important;
+    }
+}

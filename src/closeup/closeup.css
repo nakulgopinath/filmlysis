@@ -1,0 +1,140 @@
+.close-up-container-background {
+    display: block;
+    position: relative;
+    background-color: rgba(255, 255, 190,0.6)
+  }
+  
+  .close-up-container-background::after {
+    content: "";
+    background: url('../images/wallpaper2.jpg');
+    background-repeat: round;
+    opacity: 1.0;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;   
+  }
+  .close-up-body-container {
+    margin-top: 59px;
+    opacity: 1.0;
+  }
+.close-up-container {
+    margin-left: 100px;
+    margin-top: 59px;
+    margin-right: 100px;
+    padding-left: 50px;
+    padding-right: 50px;
+    /* height: 209px; */
+    background-color: transparent;
+    /* box-shadow: 0 4px 8px 0 rgb(0 0 0 / 80%); */
+    justify-content: center;
+    display: flow-root;
+}
+
+.close-up-card {
+    width: 95%;
+    /* border: 1px solid; */
+    margin-left: 32px;
+    margin-right: 10px;
+    margin-top: 29px;
+    margin-bottom: 10px;
+}
+.image-and-article{
+    display: flex;
+    justify-content: center;
+    /* border: 5px solid; */
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 80%);
+}
+.image {
+    display: flex;
+    width: 40%;
+    margin-left: 5x;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    /* background-repeat: repeat-x; */
+    /* border: 2px solid; */
+}
+.article {
+    width: 60%;
+    /* border: 1px solid; */
+    padding-left: 10px;
+}
+.article-heading {
+    display: flex;
+    padding-top: 30px;
+    font-family: 'Merriweather', serif;
+}
+.article-name {
+    width: 75%;
+    font-weight: bold;
+    font-size: 25px;
+}
+.article-date {
+    width: 25%;
+    font-size: 17px;
+    padding-top: 15px;
+    font-family: 'Merriweather', serif;
+}
+.article-content {
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    line-height: 1.7;
+    font-size: 17px;
+}
+.read-full-article {
+    margin-top: 20px;
+}
+.close-up-card ul li {
+    float: left;
+    list-style-type:none
+}
+
+@media only screen and (max-width: 600px) { 
+    .close-up-container{
+        margin: 0;
+        padding: 0;
+        margin-top: 20px;
+    }
+    .image {
+        padding: 10;
+        margin: 0;
+        width: 94%;
+        height: 202px;
+    }
+    .article {
+        width: 99%;
+    }
+    .article-name {
+        width: 100%;
+        margin-bottom: 0px;
+    }
+    .article-date{
+        margin-top: 0px;
+        width: 100%;
+        padding-top: 1px;
+    }
+    .article-heading {
+        display: block;
+    }
+    .close-up-card {
+        margin-right: 10px;
+        margin-left: 25px;
+        padding: 0;
+        width: 85%;
+    }
+    .image-and-article{
+        display: block;
+    }
+    .close-up-ul {
+        margin: 0;
+        padding: 0;
+    }
+    .close-up-body-container {
+        margin-top: 31px;
+        opacity: 1.0;
+      }
+}

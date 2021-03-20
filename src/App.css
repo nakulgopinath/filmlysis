@@ -12,7 +12,29 @@
     animation: App-logo-spin infinite 20s linear;
   }
 }
+/* .container-background {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url('./images/wallpaper2.jpg');
+} */
+.container-background {
+  display: block;
+  position: relative;
+  background-color: rgba(255, 255, 190,0.6)
+}
 
+.container-background::after {
+  content: "";
+  background: url('./images/wallpaper2.jpg');
+  background-repeat: round;
+  opacity: 1.0;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;   
+}
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -27,12 +49,56 @@
 .App-link {
   color: #61dafb;
 }
+.body-container {
+  margin-top: 59px;
+  opacity: 1.0;
+}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+#showmore {
+text-align: right;
+font-size: 15px;
+font-weight: bold;
+color: #fdd007;
+text-decoration: none;
+display: block;
+padding-right: 35px;
+padding-bottom: 20px;
+font-family: 'Merriweather';
+}
+.articles {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  width: 100%;
+  content: "";
+  display: table;
+  clear: both;
+  box-shadow: 0 4px 8px 0 rgb(0 0 0 / 80%);
+  text-align: center;
+  background-color:black;
+  margin-top: 20px;
+  font-family: 'Roboto', sans-serif;
+}
+.category-para {
+  text-align: left;
+  font-size: 20px;
+  color: #fdd007;
+  font-weight: bold;
+  padding-left: 25px;
+  font-family: 'Merriweather', serif;
+}
+.show-more {
+  margin-bottom: 50px;
+}
+@media only screen and (max-width: 600px) {
+  .articles {
+    padding-left: 13px;
+    width: 96%;
   }
-  to {
-    transform: rotate(360deg);
+  .body-container {
+    margin-top: 31px;
+    opacity: 1.0;
+  }
+  .category-para {
+    padding-left: 0px;
   }
 }

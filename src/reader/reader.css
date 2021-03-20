@@ -1,0 +1,147 @@
+.reader-container-background {
+    display: block;
+    position: relative;
+    background-color: rgba(255, 255, 190,0.6)
+  }
+  
+  .reader-container-background::after {
+    content: "";
+    background: url('../images/wallpaper2.jpg');
+    background-repeat: round;
+    opacity: 1.0;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;   
+  }
+  .reader-body-container {
+    margin-top: 59px;
+    opacity: 1.0;
+  }
+.reader-container {
+    margin-left: 100px;
+    margin-top: 59px;
+    margin-right: 100px;
+    padding-left: 50px;
+    padding-right: 50px;
+    /* height: 209px; */
+    background-color: transparent;
+    /* box-shadow: 0 4px 8px 0 rgb(0 0 0 / 80%); */
+    justify-content: center;
+    display: flow-root;
+}
+
+.reader-card {
+    width: 95%;
+    /* border: 1px solid; */
+    margin-left: 32px;
+    margin-right: 10px;
+    margin-top: 29px;
+    margin-bottom: 10px;
+}
+.reader-image-and-article{
+    display: block;
+    justify-content: center;
+    /* border: 5px solid; */
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 80%);
+    padding-top: 20px;
+}
+.reader-image {
+    display: flex;
+    width: 61%;
+    height: 424px;
+    margin-left: 225px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    /* background-repeat: repeat-x; */
+    border: 2px solid;
+}
+.reader-article {
+    width: 90%;
+    /* border: 1px solid; */
+    margin-left: 50px;
+}
+.reader-article-heading {
+    display: block;
+    padding-top: 30px;
+    font-family: 'Merriweather', serif;
+}
+.reader-article-name {
+    width: 75%;
+    font-weight: bold;
+    font-size: 25px;
+    margin-bottom: 0px;
+}
+.reader-article-date {
+    margin-top: 0px;
+    width: 25%;
+    font-size: 17px;
+    padding-top: 15px;
+    font-family: 'Merriweather', serif;
+}
+.reader-article-content {
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    line-height: 1.7;
+    font-size: 17px;
+}
+.read-full-article {
+    margin-top: 20px;
+}
+.reader-card ul li {
+    float: left;
+    list-style-type:none
+}
+
+@media only screen and (max-width: 600px) { 
+    .reader-container{
+        margin: 0;
+        padding: 0;
+        margin-top: 20px;
+    }
+    .reader-image {
+        padding: 10;
+        margin: 0;
+        width: 94%;
+        height: 202px;
+        border: 0px;
+    }
+    .reader-article {
+        width: 99%;
+        margin-left: 0px;
+    }
+    .reader-article-name {
+        width: 100%;
+        margin-bottom: 0px;
+    }
+    .reader-article-date{
+        margin-top: 0px;
+        width: 100%;
+        padding-top: 1px;
+    }
+    .reader-article-heading {
+        display: block;
+    }
+    .reader-card {
+        margin-right: 10px;
+        margin-left: 25px;
+        padding: 0;
+        width: 85%;
+    }
+    .reader-image-and-article {
+        padding-top: 0px;
+    }
+    
+    .reader-ul {
+        margin: 0;
+        padding: 0;
+    }
+    .reader-body-container {
+        margin-top: 31px;
+        opacity: 1.0;
+      }
+}
