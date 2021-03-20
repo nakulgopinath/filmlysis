@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/filmlysis/static/css/main.b3041dfb.chunk.css",
+    "main.css": "/filmlysis/static/css/main.0c0af885.chunk.css",
     "main.js": "/filmlysis/static/js/main.d528b800.chunk.js",
     "main.js.map": "/filmlysis/static/js/main.d528b800.chunk.js.map",
     "runtime-main.js": "/filmlysis/static/js/runtime-main.62dcdd94.js",
@@ -12,7 +12,7 @@
     "static/js/3.79da4742.chunk.js.map": "/filmlysis/static/js/3.79da4742.chunk.js.map",
     "index.html": "/filmlysis/index.html",
     "static/css/2.6b560088.chunk.css.map": "/filmlysis/static/css/2.6b560088.chunk.css.map",
-    "static/css/main.b3041dfb.chunk.css.map": "/filmlysis/static/css/main.b3041dfb.chunk.css.map",
+    "static/css/main.0c0af885.chunk.css.map": "/filmlysis/static/css/main.0c0af885.chunk.css.map",
     "static/js/2.8e031530.chunk.js.LICENSE.txt": "/filmlysis/static/js/2.8e031530.chunk.js.LICENSE.txt",
     "static/media/navbar.css": "/filmlysis/static/media/cover.1a16abc2.png",
     "static/media/card.css": "/filmlysis/static/media/gf.fb8c22bb.png",
@@ -23,7 +23,7 @@
     "static/js/runtime-main.62dcdd94.js",
     "static/css/2.6b560088.chunk.css",
     "static/js/2.8e031530.chunk.js",
-    "static/css/main.b3041dfb.chunk.css",
+    "static/css/main.0c0af885.chunk.css",
     "static/js/main.d528b800.chunk.js"
   ]
 }
