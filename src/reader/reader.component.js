@@ -1,10 +1,40 @@
 import React from 'react';
 import './reader.css'
 import image from '../images/gf.png';
+import {withRouter} from 'react-router-dom';
+import firebase from '../utils/firebase/firebase';
+const db = firebase.firestore();
 
 class Reader extends React.Component {
-
+    constructor()
+    {
+        super();
+        this.state = {
+            reader:{}
+        }
+    }
+    componentDidMount(){
+        if(this.props.location.state !== undefined){
+            if(this.props.location.state.hasOwnProperty('reader')) {
+                this.setState({reader:this.props.location.state.reader})
+            }
+        }else {
+            this.getArticle(this.props.match.params.category,this.props.match.params.id)
+        }
+    }
+    getArticle = (category,id) => {
+        let allArticles = [];
+        db.collection(category)
+        .doc(id)
+        .get()
+        .then(docs => {
+          if(!docs.empty) {
+              this.setState({reader: docs.data()})
+          }
+      })
+    }
     render(){
+        console.log(this.props)
         return(
             <div className='reader-container-background'>
                 <div className = "closeup-body-container">
@@ -32,4 +62,4 @@ class Reader extends React.Component {
     }
 }
 
-export default Reader
+export default withRouter(Reader)
