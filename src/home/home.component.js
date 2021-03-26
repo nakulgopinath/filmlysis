@@ -1,5 +1,6 @@
 import "../App.css";
 import React from "react";
+import {Link} from 'react-router-dom'
 import RecentPosts from "../recentposts/recentposts.component";
 import Cards from "../card/card.component";
 import firebase from "../utils/firebase/firebase";
@@ -56,12 +57,21 @@ class Home extends React.Component {
               <Cards topCloseUpPosts />
               <Cards topCloseUpPosts />
               <Cards topCloseUpPosts />
+              <div className='show-more'>
+                <Link >SHOW MORE>>></Link>
+              </div>
               <Cards topCloseUpPosts />
               <Cards topCloseUpPosts />
               <Cards topCloseUpPosts />
+              <div className='show-more'>
+                <Link>SHOW MORE>>></Link>
+              </div>
               <Cards topCloseUpPosts />
               <Cards topCloseUpPosts />
               <Cards topCloseUpPosts />
+              <div className='show-more'>
+                <Link>SHOW MORE>>></Link>
+              </div>
             </div>
             <div id={instafeedTarget}>
               <p>INSTAGRAM POSTS</p>
