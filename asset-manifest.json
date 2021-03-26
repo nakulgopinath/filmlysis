@@ -1,29 +1,29 @@
 {
   "files": {
-    "main.css": "/filmlysis/static/css/main.348f8cc0.chunk.css",
-    "main.js": "/filmlysis/static/js/main.3cb15059.chunk.js",
-    "main.js.map": "/filmlysis/static/js/main.3cb15059.chunk.js.map",
-    "runtime-main.js": "/filmlysis/static/js/runtime-main.24c5ef7d.js",
-    "runtime-main.js.map": "/filmlysis/static/js/runtime-main.24c5ef7d.js.map",
-    "static/css/2.6b560088.chunk.css": "/filmlysis/static/css/2.6b560088.chunk.css",
-    "static/js/2.35efcbfd.chunk.js": "/filmlysis/static/js/2.35efcbfd.chunk.js",
-    "static/js/2.35efcbfd.chunk.js.map": "/filmlysis/static/js/2.35efcbfd.chunk.js.map",
-    "static/js/3.87c67d41.chunk.js": "/filmlysis/static/js/3.87c67d41.chunk.js",
-    "static/js/3.87c67d41.chunk.js.map": "/filmlysis/static/js/3.87c67d41.chunk.js.map",
+    "main.css": "/filmlysis/static/css/main.9ca4134d.chunk.css",
+    "main.js": "/filmlysis/static/js/main.52736b2a.chunk.js",
+    "main.js.map": "/filmlysis/static/js/main.52736b2a.chunk.js.map",
+    "runtime-main.js": "/filmlysis/static/js/runtime-main.60fc7f15.js",
+    "runtime-main.js.map": "/filmlysis/static/js/runtime-main.60fc7f15.js.map",
+    "static/css/2.b7a6422b.chunk.css": "/filmlysis/static/css/2.b7a6422b.chunk.css",
+    "static/js/2.8a917fa7.chunk.js": "/filmlysis/static/js/2.8a917fa7.chunk.js",
+    "static/js/2.8a917fa7.chunk.js.map": "/filmlysis/static/js/2.8a917fa7.chunk.js.map",
+    "static/js/3.11f7434f.chunk.js": "/filmlysis/static/js/3.11f7434f.chunk.js",
+    "static/js/3.11f7434f.chunk.js.map": "/filmlysis/static/js/3.11f7434f.chunk.js.map",
     "index.html": "/filmlysis/index.html",
-    "static/css/2.6b560088.chunk.css.map": "/filmlysis/static/css/2.6b560088.chunk.css.map",
-    "static/css/main.348f8cc0.chunk.css.map": "/filmlysis/static/css/main.348f8cc0.chunk.css.map",
-    "static/js/2.35efcbfd.chunk.js.LICENSE.txt": "/filmlysis/static/js/2.35efcbfd.chunk.js.LICENSE.txt",
+    "static/css/2.b7a6422b.chunk.css.map": "/filmlysis/static/css/2.b7a6422b.chunk.css.map",
+    "static/css/main.9ca4134d.chunk.css.map": "/filmlysis/static/css/main.9ca4134d.chunk.css.map",
+    "static/js/2.8a917fa7.chunk.js.LICENSE.txt": "/filmlysis/static/js/2.8a917fa7.chunk.js.LICENSE.txt",
     "static/media/navbar.css": "/filmlysis/static/media/cover.1a16abc2.png",
-    "static/media/card.css": "/filmlysis/static/media/gf.fb8c22bb.png",
+    "static/media/gf.fb8c22bb.png": "/filmlysis/static/media/gf.fb8c22bb.png",
     "static/media/house01-700x500.ab5a811b.jpg": "/filmlysis/static/media/house01-700x500.ab5a811b.jpg",
     "static/media/reader.css": "/filmlysis/static/media/wallpaper2.2280bc15.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.24c5ef7d.js",
-    "static/css/2.6b560088.chunk.css",
-    "static/js/2.35efcbfd.chunk.js",
-    "static/css/main.348f8cc0.chunk.css",
-    "static/js/main.3cb15059.chunk.js"
+    "static/js/runtime-main.60fc7f15.js",
+    "static/css/2.b7a6422b.chunk.css",
+    "static/js/2.8a917fa7.chunk.js",
+    "static/css/main.9ca4134d.chunk.css",
+    "static/js/main.52736b2a.chunk.js"
   ]
 }
