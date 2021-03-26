@@ -1,82 +1,81 @@
-import '../App.css';
-import React  from 'react'
-import RecentPosts from '../recentposts/recentposts.component';
-import Cards from '../card/card.component';
-import {Link,BrowserRouter as Router} from 'react-router-dom';
-import firebase from '../utils/firebase/firebase';
-const db = firebase.firestore();
+import "../App.css";
+import React from "react";
+import RecentPosts from "../recentposts/recentposts.component";
+import Cards from "../card/card.component";
+import firebase from "../utils/firebase/firebase";
+import InstagramFeed from "react-ig-feed";
+import "react-ig-feed/dist/index.css";
 
+const db = firebase.firestore();
 class Home extends React.Component {
-  constructor(){
+  constructor() {
     super();
     this.state = {
-      topCloseUpPosts: []
+      topCloseUpPosts: [],
     };
   }
-  componentDidMount(){
+  componentDidMount() {
     this.getTopCloseUpPosts();
   }
-  getTopCloseUpPosts = () =>{
+  getTopCloseUpPosts = () => {
     let allArticles = [];
-    db.collection('closeup').orderBy("date", "desc").limit(5)
-    .get()
-    .then(docs => {
-      if(!docs.empty) {
+    db.collection("closeup")
+      .orderBy("date", "desc")
+      .limit(3)
+      .get()
+      .then((docs) => {
+        if (!docs.empty) {
           docs.forEach((doc) => {
-              const article = {
-                  id: doc,
-                  ...doc.data()  
-              }
-              console.log('top posts...doc.data()',article)
-              allArticles.push(article);
-          })
-          this.setState({topCloseUpPosts: allArticles})
-      }
-  })
-  }
+            const article = {
+              id: doc,
+              ...doc.data(),
+            };
+            console.log("top posts...doc.data()", article);
+            allArticles.push(article);
+          });
+          this.setState({ topCloseUpPosts: allArticles });
+        }
+      });
+  };
   renderTopPosts = () => {
-    const {topCloseUpPosts} = this.state;
-    // for(var i = 1 ;i<5;++i) {
-    //   return(<Cards />)
-    // }
-    const card = topCloseUpPosts.map(obj => {
-      return(<Cards topCloseUpPosts={obj} />)
-    })
+    const { topCloseUpPosts } = this.state;
+    const card = topCloseUpPosts.map((obj) => {
+      return <Cards topCloseUpPosts={obj} />;
+    });
     return card;
-  }
-    render() {
-      const {topCloseUpPosts} = this.state;
-        return(
-            <div className='container-background'>
-                <div className = "body-container">
-        <RecentPosts />
-        <div className='articles'>
-          <p className='category-para'>TOP CLOSE UP POSTS</p>
-          {this.renderTopPosts()}
-          {this.renderTopPosts()}
-          {/* {topCloseUpPosts && topCloseUpPosts.map(obj => {
-            <Cards />
-          })} */}
-          <div className='show-more'>
-            <Link id={'showmore'} to='/home2'>{'Show More >>'}</Link>
-          </div>
-          <p className='category-para'>TOP EDITS POSTS</p> 
-          {/* <Cards />
-          <Cards />
-          <Cards />
-          <Cards /> */}
-          <div className='show-more'>
-          <Router>
-            <Link id={'showmore'} to={'#'}>{'Show More >>'}</Link>
-          </Router>
-          </div>
-          </div>
-
-      </div>
+  };
+  render() {
+    const { topCloseUpPosts } = this.state;
+    const instafeedTarget = "instafeed";
+    return (
+      <div className="container-background">
+        <div className="body-container">
+          <RecentPosts />
+          <div className="article-insta">
+            <div className="articles">
+              <Cards topCloseUpPosts />
+              <Cards topCloseUpPosts />
+              <Cards topCloseUpPosts />
+              <Cards topCloseUpPosts />
+              <Cards topCloseUpPosts />
+              <Cards topCloseUpPosts />
+              <Cards topCloseUpPosts />
+              <Cards topCloseUpPosts />
+              <Cards topCloseUpPosts />
             </div>
-        );
-        
-    }
+            <div id={instafeedTarget}>
+              <p>INSTAGRAM POSTS</p>
+              <InstagramFeed
+                token="IGQVJVdXlTaW54XzNaT25HVW9ybG5Ua0l0aTJxTzJrLWg0UG94a2NSZAi02aVEtYW1BT2tWc0tmU20wU2dBeFZAhUEhiUW1VWGNxdDVLU1kteWZALeDlFVldhY0wyekhQMnNYSjZAUVnB4VHNDMEJndF85VQZDZD"
+                counter="9"
+              />
+              <p>SHOW MORE</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    );
+  }
 }
 
-export default Home
+export default Home;

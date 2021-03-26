@@ -12,7 +12,8 @@ class Card extends React.Component {
                     pathname:this.props.topCloseUpPosts.category+'/:'+this.props.topCloseUpPosts.id,
                     state:{reader:this.props.topCloseUpPosts}
                     }}><img id="background-img" src={image} height={196} width={379.35} /></Link>
-                   <p id="heading-para">{this.props.topCloseUpPosts.heading? this.props.topCloseUpPosts.heading:''}</p> 
+                   <p id="heading-label">{this.props.topCloseUpPosts.heading? this.props.topCloseUpPosts.heading:'CLOSE UP'}</p> 
+                   <p id="heading-para">{this.props.topCloseUpPosts.heading? this.props.topCloseUpPosts.heading:'test'}</p> 
                 </div>
             </div>
         );

@@ -12,7 +12,7 @@
 .navbar-menu {
   padding-top: 190px;
   display: block;
-  border-bottom: 10px solid;
+  border-bottom: 10px solid #293250;
 }
 
 .navbar li {
@@ -23,14 +23,14 @@
 } */
 .navbar li a {
 display: block;
-color: #000000;
+color: #293250;
 text-align: center;
 padding: 14px 16px;
 text-decoration: none;
 font-family: 'Oswald', sans-serif;
 }
 .navbar li a:hover {
-  background-color:black;
+  background-color:#293250;
   color: #fdd007;
 }
 #menu-links{

@@ -20,7 +20,7 @@
 .container-background {
   display: block;
   position: relative;
-  background-color: rgba(255, 255, 190,0.6)
+  background-color: rgba(255, 255, 245,0.6)
 }
 
 .container-background::after {
@@ -52,36 +52,39 @@
 .body-container {
   margin-top: 59px;
   opacity: 1.0;
+  margin-right: 100px;
+  margin-left: 100px;
 }
-
+.article-insta{
+  display: flex;
+}
 #showmore {
 text-align: right;
 font-size: 15px;
 font-weight: bold;
-color: #fdd007;
+color: #293270;
 text-decoration: none;
 display: block;
-padding-right: 35px;
+padding-right: 75px;
 padding-bottom: 20px;
-font-family: 'Merriweather';
+font-family: 'Oswald', sans-serif;
 }
 .articles {
   padding-top: 20px;
   padding-bottom: 20px;
-  width: 100%;
+  width: 80%;
   content: "";
   display: table;
   clear: both;
-  box-shadow: 0 4px 8px 0 rgb(0 0 0 / 80%);
+  /* box-shadow: 0 4px 8px 0 rgb(0 0 0 / 80%); */
   text-align: center;
-  background-color:black;
   margin-top: 20px;
   font-family: 'Roboto', sans-serif;
 }
 .category-para {
   text-align: left;
   font-size: 20px;
-  color: #fdd007;
+  color: #293270;
   font-weight: bold;
   padding-left: 25px;
   font-family: 'Merriweather', serif;
@@ -89,16 +92,50 @@ font-family: 'Merriweather';
 .show-more {
   margin-bottom: 50px;
 }
+#instafeed {
+  width: 25%;
+    padding-top: 0px;
+    margin-top: 75px;
+    height: fit-content;
+    color: #293270 ;
+    /* background: #fdd007; */
+    font-size: 18px;
+    position: relative;
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+    text-shadow: none;
+    color: #fdd007 ;
+    font-weight: 600;
+    background: #293250;
+} 
+._2R-kh {
+  width: 100%;
+  display: grid !important;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0px;
+}
+._wPDyp {
+  margin: 0px !important;
+  border: 2px solid white;
+}
 @media only screen and (max-width: 600px) {
   .articles {
-    padding-left: 13px;
+    padding-left: 10px;
     width: 96%;
+  }
+  .article-insta {
+    display: block;
   }
   .body-container {
     margin-top: 31px;
     opacity: 1.0;
+    margin-left: 10px;
+    margin-right: 10px;
   }
   .category-para {
     padding-left: 0px;
+  }
+  #instafeed{
+    width: 100%;
   }
 }

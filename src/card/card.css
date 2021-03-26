@@ -1,5 +1,5 @@
 .card  {
-    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);
+    box-shadow: 0 8px 16px 0 rgb(0 0 0 / 90%);
     text-align: center;
     background-color:rgba(244, 233, 205,0.50);
     float: left;
@@ -9,14 +9,29 @@
     margin-right: 18px;
     margin-left: 19px;
     margin-bottom: 25px;
-    width: 22%;
+    width: 28%;
     height: 190px;
-    border: #fdd007 4px solid;
+    /* border: #293250 4px solid; */
     /* background-image: url("../images/gf.png"); */
 }
 #background-img {
-    width: 372px;
+    width: 332px;
     height: 190px;
+}
+#heading-label{
+    margin: 0px;
+    padding: 0px;
+    top: -195px;
+    padding-right: 5px;
+    padding-left: 5px;
+    width: fit-content;
+    right: -1px;
+    font-size: 15px;
+    position: relative;
+    font-family: 'Oswald', sans-serif;
+    text-shadow: none;
+    color: #fdd007 ;
+    background: #293250;
 }
 .card:hover {
     transform: scale(1.05);
@@ -24,7 +39,7 @@
 }
 #heading-para {
 margin-bottom: 0px;
-margin-top: -35px;
+margin-top: -65px;
 }
 .poster {
 font-family: 'Merriweather', serif;

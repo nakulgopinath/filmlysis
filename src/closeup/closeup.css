@@ -1,7 +1,7 @@
 .close-up-container-background {
     display: block;
     position: relative;
-    background-color: rgba(255, 255, 190,0.6)
+    background-color: rgba(255, 255, 245,0.6)
   }
   
   .close-up-container-background::after {
