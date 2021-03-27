@@ -30,6 +30,9 @@ class CloseUp extends React.Component {
         }
       });
   };
+  getComments = () => {
+    db.collection('closeup')
+  }
   renderAllCloseUpPosts = () => {
     const { topCloseUpPosts } = this.state;
     const data =
